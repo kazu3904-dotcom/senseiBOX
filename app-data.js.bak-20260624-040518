@@ -7,13 +7,6 @@ const appData = {
             link: "https://chatgpt.com/g/g-6996261b941c819184c29308e1bbaade-dui-hua-kasheng-marerushou-ye-she-ji-gpts",
             isExternal: true
         },
-        {
-            title: "SlidePlay - PPTXプレイヤー",
-            desc: "PPTXを再生するプレゼン用ツール",
-            icon: "slideshow",
-            link: "https://aquamarine-frangipane-1a1c7c.netlify.app/",
-            isExternal: true
-        },
         { title: "偉人エピソードリーダー", desc: "朝の会などで使える短い話を表示", icon: "local_library", link: "偉人エピソード集/index.html", isExternal: false },
         { title: "学級トリビア", desc: "学級で使える雑学クイズ", icon: "lightbulb", link: "教室トリビア/index.html", isExternal: false },
         { title: "小学校ジャンプ問題メーカー", desc: "少し難しい問題を自動で作る", icon: "directions_run", link: "ジャンプ問題メーカー/index.html", isExternal: false },
@@ -67,35 +60,14 @@ const appData = {
         { title: "特別支援 教育／指導計画生成", desc: "指導計画の作成をサポート", icon: "volunteer_activism", link: "#", isExternal: false },
         { title: "通知表教科所見作成GPTs", desc: "小・中学校の教科所見を作成", icon: "assignment", link: "#", isExternal: false }
     ],
-    "learning-grades": [
-        { grade: "1", title: "小1\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "2", title: "小2\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "3", title: "小3\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "4", title: "小4\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "5", title: "小5\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "6", title: "小6\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true }
-    ],
-    "learning-apps": [
-        { title: "九九アプリ", desc: "九九の練習や確認に", icon: "calculate", link: "九九アプリ/index.html", isExternal: false },
-        { title: "学級トリビア", desc: "学びのきっかけになる雑学クイズ", icon: "lightbulb", link: "教室トリビア/index.html", isExternal: false },
-        { title: "小学校ジャンプ問題メーカー", desc: "少し難しい問題にチャレンジ", icon: "directions_run", link: "ジャンプ問題メーカー/index.html", isExternal: false },
-        { title: "今日は何の日？", desc: "日付から学びの話題を広げる", icon: "event", link: "今日は何の日/index.html", isExternal: false },
+    "info-apps": [
         {
-            title: "歴史の教科書の挿絵を実写化GEM",
-            desc: "歴史の学習に役立つ画像を作る",
-            icon: "history_edu",
-            link: "https://gemini.google.com/gem/1-qRLQU87AFX1eqn7Dj5naN3bnU5wyBas?usp=sharing",
+            title: "SlidePlay - PPTXプレイヤー",
+            desc: "PPTXを再生するプレゼン用ツール",
+            icon: "slideshow",
+            link: "https://aquamarine-frangipane-1a1c7c.netlify.app/",
             isExternal: true
         },
-        {
-            title: "写真の文字をテキスト化GPTs",
-            desc: "画像から文字を読み取って学習に使う",
-            icon: "document_scanner",
-            link: "https://chatgpt.com/g/g-69d2bb7765a081918ce52b92c90b9e1e-sumahotecuo-ying-sitaxie-zhen-nowen-zi-wotekisutohua",
-            isExternal: true
-        }
-    ],
-    "info-apps": [
         {
             title: "先生の時間を生み出すチャンネル",
             desc: "役立つ時間術やマインドを発信中",

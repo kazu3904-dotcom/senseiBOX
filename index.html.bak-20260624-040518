@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>せんせい箱・まなび箱 | 先生と子どもの毎日をちょっと楽にするアプリ集</title>
+    <title>せんせい箱 | 先生の毎日をちょっと楽にするアプリ集</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
@@ -13,8 +13,9 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <h1><span class="material-symbols-rounded">inventory_2</span>せんせい箱・まなび箱</h1>
-            <p>先生と子どもの毎日をちょっと楽にするアプリ集</p>
+            <h1><span class="material-symbols-rounded">inventory_2</span>せんせい箱</h1>
+            <p>先生の毎日をちょっと楽にするアプリ集</p>
+            <div class="notice">新しく小テスト作成GPT、通知表教科所見作成GPTを追加しました</div>
         </div>
     </header>
 
@@ -27,10 +28,6 @@
             <span class="material-symbols-rounded">edit_note</span>
             <span>所見・事務</span>
         </button>
-        <a class="tab-button" href="https://sites.google.com/view/manabinohako/home">
-            <span class="material-symbols-rounded">school</span>
-            <span>まなび箱</span>
-        </a>
         <button class="tab-button" type="button" data-target="tab-info">
             <span class="material-symbols-rounded">campaign</span>
             <span>情報・連絡</span>
@@ -39,15 +36,15 @@
 
     <main class="page">
         <section class="about-panel" aria-labelledby="about-title">
-            <h2 id="about-title">せんせい箱・まなび箱とは</h2>
-            <p>このサイト「せんせい箱・まなび箱」は、小学校・中学校の先生が授業や学級活動、校務で使える便利なアプリと、子どもの学びに役立つツールをまとめたポータルサイトです。</p>
+            <h2 id="about-title">せんせい箱とは</h2>
+            <p>このサイト「せんせい箱」は、小学校・中学校の先生が授業や学級活動、校務で使える便利なアプリをまとめたポータルサイトです。</p>
             <p>学級活動で使えるタイマーやくじ、クイズ、通知表の記載文例づくり、ファイル整理やPDF変換など、現場で役立つツールを無料で公開しています。</p>
             <p>授業中にすぐ使いたいとき、学級活動でさっと開きたいとき、校務の合間に短時間で処理したいときに役立つように、シンプルで使いやすい形にしています。</p>
         </section>
 
         <div class="search-area">
             <span class="material-symbols-rounded" aria-hidden="true">search</span>
-            <input id="search-input" type="search" placeholder="アプリを検索（例：くじ、タイマー、所見、九九、PDF）" autocomplete="off">
+            <input id="search-input" type="search" placeholder="アプリを検索（例：くじ、タイマー、所見、PDF）" autocomplete="off">
         </div>
 
         <section id="tab-class" class="tab-panel active" aria-labelledby="tab-class-title">
@@ -64,56 +61,6 @@
                 <h2 id="tab-office-title">所見・校務で使う</h2>
             </div>
             <div class="app-grid" id="office-apps-container"></div>
-        </section>
-
-        <section id="tab-learning" class="tab-panel" aria-labelledby="tab-learning-title">
-            <div class="learning-portal">
-                <div class="learning-nav">
-                    <a class="learning-brand" href="https://sites.google.com/view/manabinohako/home" target="_blank" rel="noopener noreferrer">まなび箱</a>
-                    <div class="learning-links" aria-label="まなび箱メニュー">
-                        <a href="https://sites.google.com/view/manabinohako/home" target="_blank" rel="noopener noreferrer">Home</a>
-                        <button type="button" data-target="tab-class">せんせい箱</button>
-                        <a href="#song-section">歌でおぼえよう♪</a>
-                        <a href="#science-section">理科ページ</a>
-                        <span class="material-symbols-rounded" aria-hidden="true">search</span>
-                    </div>
-                </div>
-
-                <div class="learning-hero" aria-labelledby="tab-learning-title">
-                    <span class="hero-item hero-book material-symbols-rounded" aria-hidden="true">menu_book</span>
-                    <span class="hero-item hero-music material-symbols-rounded" aria-hidden="true">music_note</span>
-                    <span class="hero-item hero-science material-symbols-rounded" aria-hidden="true">science</span>
-                    <span class="hero-item hero-light material-symbols-rounded" aria-hidden="true">emoji_objects</span>
-                    <span class="hero-item hero-globe material-symbols-rounded" aria-hidden="true">public</span>
-                    <span class="hero-item hero-pencil material-symbols-rounded" aria-hidden="true">edit</span>
-                    <div class="hero-cloud">
-                        <h2 id="tab-learning-title">まなび箱</h2>
-                        <p>楽しく学べる 学習ポータル</p>
-                    </div>
-                </div>
-
-                <div class="learning-band">
-                    <h3>小学生向け</h3>
-                </div>
-
-                <div class="grade-grid" id="learning-apps-container"></div>
-
-                <div class="learning-tool-section" id="song-section">
-                    <div class="section-heading">
-                        <span class="material-symbols-rounded">auto_stories</span>
-                        <h2>学習ツール</h2>
-                    </div>
-                    <div class="app-grid" id="learning-tools-container"></div>
-                </div>
-
-                <div id="science-section" class="learning-note">
-                    <span class="material-symbols-rounded">science</span>
-                    <div>
-                        <h3>理科ページ</h3>
-                        <p>理科の学習リンクや実験動画などを、ここに追加できます。</p>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section id="tab-info" class="tab-panel" aria-labelledby="tab-info-title">
@@ -147,8 +94,6 @@
         const containers = {
             "class-apps": document.getElementById("class-apps-container"),
             "office-apps": document.getElementById("office-apps-container"),
-            "learning-apps": document.getElementById("learning-apps-container"),
-            "learning-tools": document.getElementById("learning-tools-container"),
             "info-apps": document.getElementById("info-apps-container")
         };
 
@@ -159,7 +104,7 @@
         function renderCards() {
             containers["class-apps"].innerHTML = appData["class-apps"].map(app => `
                 <a class="app-card" href="${app.link}"${cardTarget(app)}>
-                    <span class="icon-circle tone-${app.tone || "blue"} material-symbols-rounded">${app.icon}</span>
+                    <span class="icon-circle material-symbols-rounded">${app.icon}</span>
                     <span class="card-title">${app.title}</span>
                     <span class="card-desc">${app.desc}</span>
                 </a>
@@ -167,22 +112,7 @@
 
             containers["office-apps"].innerHTML = appData["office-apps"].map(app => `
                 <a class="app-card" href="${app.link}"${cardTarget(app)}>
-                    <span class="icon-circle tone-${app.tone || "blue"} material-symbols-rounded">${app.icon}</span>
-                    <span class="card-title">${app.title}</span>
-                    <span class="card-desc">${app.desc}</span>
-                </a>
-            `).join("");
-
-            containers["learning-apps"].innerHTML = appData["learning-grades"].map(app => `
-                <a class="grade-card grade-${app.grade}" href="${app.link}"${cardTarget(app)}>
-                    <span class="grade-number">${app.grade}</span>
-                    <span class="grade-title">${app.title}</span>
-                </a>
-            `).join("");
-
-            containers["learning-tools"].innerHTML = appData["learning-apps"].map(app => `
-                <a class="app-card" href="${app.link}"${cardTarget(app)}>
-                    <span class="icon-circle tone-${app.tone || "blue"} material-symbols-rounded">${app.icon}</span>
+                    <span class="icon-circle material-symbols-rounded">${app.icon}</span>
                     <span class="card-title">${app.title}</span>
                     <span class="card-desc">${app.desc}</span>
                 </a>
@@ -190,7 +120,7 @@
 
             containers["info-apps"].innerHTML = appData["info-apps"].map(app => `
                 <a class="info-card" href="${app.link}"${cardTarget(app)}>
-                    <span class="info-icon ${app.iconClass || ""} tone-${app.tone || "blue"} material-symbols-rounded">${app.icon}</span>
+                    <span class="info-icon ${app.iconClass || ""} material-symbols-rounded">${app.icon}</span>
                     <span class="info-body">
                         <span class="card-title">${app.title}</span>
                         <span class="card-desc">${app.desc.replace(/\n/g, "<br>")}</span>
@@ -206,17 +136,13 @@
             document.querySelectorAll(".tab-panel").forEach(panel => {
                 panel.classList.toggle("active", panel.id === targetId);
             });
-            document.body.classList.toggle("learning-mode", targetId === "tab-learning");
-            if (targetId === "tab-learning") {
-                document.getElementById("search-input").value = "";
-            }
             applySearch();
         }
 
         function applySearch() {
             const term = document.getElementById("search-input").value.trim().toLowerCase();
             const activePanel = document.querySelector(".tab-panel.active");
-            const cards = activePanel.querySelectorAll(".app-card, .info-card, .grade-card");
+            const cards = activePanel.querySelectorAll(".app-card, .info-card");
             let visibleCount = 0;
 
             cards.forEach(card => {
@@ -228,7 +154,7 @@
             document.getElementById("empty-message").classList.toggle("show", visibleCount === 0);
         }
 
-        document.querySelectorAll(".tab-button[data-target], .learning-links button[data-target]").forEach(button => {
+        document.querySelectorAll(".tab-button").forEach(button => {
             button.addEventListener("click", () => switchTab(button.dataset.target));
         });
 

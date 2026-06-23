@@ -60,6 +60,23 @@ a {
     font-weight: 700;
 }
 
+.notice {
+    display: inline-flex;
+    align-items: center;
+    max-width: min(92vw, 640px);
+    padding: 5px 14px;
+    border-radius: 999px;
+    background: rgba(26, 111, 173, 0.34);
+    color: #fff7cf;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.notice::before {
+    content: "★";
+    margin-right: 5px;
+}
+
 .tab-nav {
     position: sticky;
     top: 0;
@@ -102,18 +119,6 @@ a {
     width: min(100%, 1100px);
     margin: 0 auto;
     padding: 36px 14px 48px;
-}
-
-.learning-mode .page {
-    width: 100%;
-    max-width: none;
-    padding: 0 0 48px;
-}
-
-.learning-mode .about-panel,
-.learning-mode .search-area,
-.learning-mode .site-footer {
-    display: none;
 }
 
 .about-panel {
@@ -326,290 +331,6 @@ a {
     color: #2f9b62;
 }
 
-.learning-portal {
-    background: #ffffff;
-}
-
-.learning-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 70px;
-    padding: 0 26px;
-    background: #0986c5;
-    color: #ffffff;
-}
-
-.learning-brand {
-    font-size: 1.55rem;
-    font-weight: 800;
-}
-
-.learning-links {
-    display: flex;
-    align-items: center;
-    gap: 26px;
-    font-size: 1.08rem;
-    font-weight: 800;
-}
-
-.learning-links a,
-.learning-links button {
-    position: relative;
-    border: 0;
-    background: transparent;
-    color: #ffffff;
-    font: inherit;
-    cursor: pointer;
-}
-
-.learning-links a:first-child::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -22px;
-    left: 0;
-    height: 8px;
-    background: #ffffff;
-}
-
-.learning-hero {
-    position: relative;
-    min-height: 390px;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-    padding: 54px 20px 46px;
-    background:
-        radial-gradient(circle at 50% 42%, rgba(255,255,255,0.98) 0 17%, rgba(255,255,255,0.78) 18% 27%, transparent 28%),
-        radial-gradient(circle at 15% 20%, #ffffff 0 4%, transparent 4.2%),
-        radial-gradient(circle at 86% 18%, #ffffff 0 4%, transparent 4.2%),
-        linear-gradient(180deg, #dff6ff 0%, #bdeaff 100%);
-}
-
-.learning-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 5% 72%, rgba(255, 214, 92, 0.9) 0 8px, transparent 9px),
-        radial-gradient(circle at 92% 72%, rgba(255, 214, 92, 0.9) 0 7px, transparent 8px),
-        radial-gradient(circle at 24% 12%, rgba(255, 143, 156, 0.85) 0 10px, transparent 11px),
-        radial-gradient(circle at 78% 10%, rgba(132, 209, 89, 0.85) 0 12px, transparent 13px);
-    opacity: 0.8;
-}
-
-.hero-cloud {
-    position: relative;
-    z-index: 1;
-    min-width: min(760px, 92vw);
-    padding: 38px 34px 34px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.84);
-    box-shadow: 0 16px 34px rgba(57, 138, 191, 0.18);
-    text-align: center;
-}
-
-.hero-cloud h2 {
-    margin: 0;
-    color: #4b9edf;
-    font-size: clamp(4rem, 10vw, 8.2rem);
-    font-weight: 900;
-    line-height: 1;
-    letter-spacing: 0;
-    text-shadow:
-        0 7px 0 rgba(255,255,255,0.95),
-        0 10px 18px rgba(96, 139, 167, 0.22);
-}
-
-.hero-cloud h2::first-letter {
-    color: #5aa6e8;
-}
-
-.hero-cloud p {
-    display: inline-block;
-    margin: 22px 0 0;
-    padding: 8px 36px;
-    color: #62a8db;
-    background: #fff1c7;
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
-    font-weight: 900;
-}
-
-.hero-item {
-    position: absolute;
-    z-index: 1;
-    color: #5aa6e8;
-    font-size: clamp(3.2rem, 6vw, 6rem);
-    opacity: 0.82;
-}
-
-.hero-book {
-    left: 5%;
-    top: 25%;
-}
-
-.hero-music {
-    left: 22%;
-    top: 8%;
-    color: #ffb94e;
-}
-
-.hero-science {
-    left: 18%;
-    bottom: 16%;
-    color: #6ac5e8;
-}
-
-.hero-light {
-    right: 18%;
-    top: 36%;
-    color: #ffd45c;
-}
-
-.hero-globe {
-    right: 8%;
-    top: 18%;
-    color: #75bd64;
-}
-
-.hero-pencil {
-    right: 7%;
-    bottom: 16%;
-    color: #ffb35c;
-}
-
-.learning-band {
-    background: #333333;
-    padding: 40px 8%;
-    text-align: center;
-}
-
-.learning-band h3 {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 20px 0;
-    border-top: 6px solid #2a2a2a;
-    border-bottom: 6px solid #2a2a2a;
-    color: #ffffff;
-    font-size: clamp(2.1rem, 4vw, 3.8rem);
-    line-height: 1.2;
-}
-
-.grade-grid {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(130px, 1fr));
-    gap: 28px;
-    width: min(100%, 1650px);
-    margin: 0 auto;
-    padding: 34px 7.5% 46px;
-    background: #ffffff;
-}
-
-.grade-card {
-    position: relative;
-    min-height: 146px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 8px;
-    padding: 24px 18px;
-    overflow: hidden;
-    border-radius: 0;
-    background:
-        linear-gradient(135deg, rgba(255,255,255,0.72), rgba(255,255,255,0.28)),
-        #f9dfe9;
-    box-shadow: 0 10px 26px rgba(57, 138, 191, 0.11);
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.grade-card:nth-child(even) {
-    background:
-        linear-gradient(135deg, rgba(255,255,255,0.72), rgba(255,255,255,0.28)),
-        #dcf4f2;
-}
-
-.grade-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 30px rgba(57, 138, 191, 0.17);
-}
-
-.grade-number {
-    color: #ffcc47;
-    font-size: clamp(3.8rem, 6vw, 6.2rem);
-    font-weight: 900;
-    line-height: 0.92;
-    -webkit-text-stroke: 2px rgba(70, 116, 145, 0.22);
-    text-shadow: 0 3px 0 rgba(255,255,255,0.88);
-}
-
-.grade-1 .grade-number {
-    color: #a77a4f;
-}
-
-.grade-2 .grade-number {
-    color: #ffda61;
-}
-
-.grade-3 .grade-number {
-    color: #d6d978;
-}
-
-.grade-4 .grade-number {
-    color: #61bde8;
-}
-
-.grade-5 .grade-number {
-    color: #86d13f;
-}
-
-.grade-6 .grade-number {
-    color: #ffc24d;
-}
-
-.grade-title {
-    white-space: pre-line;
-    color: #000000;
-    font-size: clamp(1.25rem, 1.6vw, 1.8rem);
-    font-weight: 900;
-    line-height: 1.2;
-}
-
-.learning-tool-section,
-.learning-note {
-    width: min(100%, 1100px);
-    margin: 0 auto;
-    padding: 0 14px 38px;
-}
-
-.learning-note {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
-    padding-top: 20px;
-    color: var(--muted);
-}
-
-.learning-note .material-symbols-rounded {
-    display: grid;
-    place-items: center;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    background: #eaf8ef;
-    color: #2f9b62;
-}
-
-.learning-note h3 {
-    margin: 0 0 4px;
-    color: var(--text);
-}
-
-.learning-note p {
-    margin: 0;
-}
-
 .empty-message {
     display: none;
     margin: 18px 0 0;
@@ -701,48 +422,5 @@ a {
 
     .card-desc {
         font-size: 0.74rem;
-    }
-
-    .learning-nav {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        padding: 14px;
-    }
-
-    .learning-links {
-        justify-content: space-between;
-        gap: 8px;
-        font-size: 0.86rem;
-    }
-
-    .learning-links a:first-child::after {
-        bottom: -10px;
-        height: 4px;
-    }
-
-    .learning-hero {
-        min-height: 270px;
-    }
-
-    .hero-cloud {
-        min-width: 0;
-        width: 92%;
-        padding: 30px 18px 26px;
-    }
-
-    .hero-item {
-        font-size: 2.4rem;
-    }
-
-    .grade-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
-        padding: 24px 16px 36px;
-    }
-
-    .grade-card {
-        min-height: 126px;
-        padding: 18px 12px;
     }
 }

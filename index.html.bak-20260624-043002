@@ -27,10 +27,10 @@
             <span class="material-symbols-rounded">edit_note</span>
             <span>所見・事務</span>
         </button>
-        <a class="tab-button" href="https://sites.google.com/view/manabinohako/home">
+        <button class="tab-button" type="button" data-target="tab-learning">
             <span class="material-symbols-rounded">school</span>
             <span>まなび箱</span>
-        </a>
+        </button>
         <button class="tab-button" type="button" data-target="tab-info">
             <span class="material-symbols-rounded">campaign</span>
             <span>情報・連絡</span>
@@ -228,7 +228,7 @@
             document.getElementById("empty-message").classList.toggle("show", visibleCount === 0);
         }
 
-        document.querySelectorAll(".tab-button[data-target], .learning-links button[data-target]").forEach(button => {
+        document.querySelectorAll(".tab-button, .learning-links button[data-target]").forEach(button => {
             button.addEventListener("click", () => switchTab(button.dataset.target));
         });
 

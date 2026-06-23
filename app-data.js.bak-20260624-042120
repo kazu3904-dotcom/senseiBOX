@@ -67,14 +67,6 @@ const appData = {
         { title: "特別支援 教育／指導計画生成", desc: "指導計画の作成をサポート", icon: "volunteer_activism", link: "#", isExternal: false },
         { title: "通知表教科所見作成GPTs", desc: "小・中学校の教科所見を作成", icon: "assignment", link: "#", isExternal: false }
     ],
-    "learning-grades": [
-        { grade: "1", title: "小1\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "2", title: "小2\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "3", title: "小3\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "4", title: "小4\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "5", title: "小5\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true },
-        { grade: "6", title: "小6\nこくご\nボックス", link: "https://sites.google.com/view/manabinohako/home", isExternal: true }
-    ],
     "learning-apps": [
         { title: "九九アプリ", desc: "九九の練習や確認に", icon: "calculate", link: "九九アプリ/index.html", isExternal: false },
         { title: "学級トリビア", desc: "学びのきっかけになる雑学クイズ", icon: "lightbulb", link: "教室トリビア/index.html", isExternal: false },
