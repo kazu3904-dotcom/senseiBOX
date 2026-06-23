@@ -62,10 +62,11 @@ const appData = {
     ],
     "info-apps": [
         {
-            title: "SlidePlay - PPTXプレイヤー",
-            desc: "PPTXを再生するプレゼン用ツール",
-            icon: "slideshow",
-            link: "https://aquamarine-frangipane-1a1c7c.netlify.app/",
+            title: "先生の時間を生み出すAIチャンネル",
+            desc: "動画をすばやく検索",
+            icon: "play_arrow",
+            iconClass: "youtube-icon",
+            link: "https://countkazu2026.web.app/",
             isExternal: true
         },
         {
